@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Rut Victoria · Medicina Estética en Barcelona</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+
+    <div class="logo-wrap" onclick="showPage('home')">
+      <svg class="logo-mark" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="40,4 76,72 4,72" stroke="#BB9C87" stroke-width="2" fill="none"/>
+        <polygon points="40,12 70,68 10,68" stroke="#BB9C87" stroke-width="1" fill="none" opacity="0.5"/>
+        <text x="40" y="58" text-anchor="middle" font-family="DM Serif Display,serif" font-size="28" fill="#5E4E44" letter-spacing="-1">RV</text>
+      </svg>
+      <span class="logo-text">
+        Dra. Rut Victoria
+        <span class="logo-sub">Medicina Estética</span>
+      </span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active" data-page="home"         onclick="showPage('home');return false;">Inicio</a></li>
+      <li><a href="#" data-page="dra"          onclick="showPage('dra');return false;">Dra. Rut Victoria</a></li>
+      <li><a href="#" data-page="tratamientos" onclick="showPage('tratamientos');return false;">Tratamientos</a></li>
+      <li><a href="#" data-page="casos"        onclick="showPage('casos');return false;">Casos & Testimonios</a></li>
+      <li><a href="#" data-page="blog"         onclick="showPage('blog');return false;">Blog</a></li>
+      <a href="#" class="btn btn-primary nav-cta" onclick="showPage('consulta');return false;">Consulta</a>
+    </ul>
+
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE: HOME
+═══════════════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <span class="hero-eyebrow fade-up">Barcelona · Medicina Estética Avanzada</span>
+      <h1 class="fade-up delay-1">Medicina estética con resultados naturales y sin cirugía</h1>
+      <p class="hero-subtitle fade-up delay-2">
+        Mejora tu piel, suaviza arrugas y redefine tu rostro con tratamientos médicos
+        personalizados que respetan tu esencia.
+      </p>
+      <div class="hero-ctas fade-up delay-3">
+        <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Reserva tu valoración</a>
+        <a href="#" class="btn btn-outline" onclick="showPage('tratamientos');return false;">Ver tratamientos</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img
+        src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&auto=format&fit=crop&q=80"
+        alt="Medicina Estética Dra. Rut Victoria"
+      >
+      <div class="hero-overlay">
+        <div class="hero-badge">
+          <strong>"Rejuvenecer sin perder tu esencia"</strong>
+          <p>— Dra. Rut Victoria</p>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-item"><span class="stat-num">5.0</span><span class="stat-label">Google Rating</span></div>
+          <div class="stat-item"><span class="stat-num">+500</span><span class="stat-label">Pacientes</span></div>
+          <div class="stat-item"><span class="stat-num">5 años</span><span class="stat-label">Experiencia</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-inner container">
+      <div class="trust-item"><span class="trust-icon">✦</span> Resultados naturales garantizados</div>
+      <div class="trust-item"><span class="trust-icon">✦</span> Diagnóstico personalizado</div>
+      <div class="trust-item"><span class="trust-icon">✦</span> Sin cirugía ni recuperación larga</div>
+      <div class="trust-item"><span class="trust-icon">✦</span> Médico certificado · Barcelona</div>
+    </div>
+  </div>
+
+  <!-- ¿BUSCAS UNA CLÍNICA? -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;text-align:center">
+        <span class="section-tag">Por qué elegirnos</span>
+        <h2>¿Buscas una clínica estética en Barcelona donde te expliquen qué necesitas realmente?</h2>
+        <div class="divider center"></div>
+        <p style="font-size:1.1rem;margin-bottom:1.3rem">
+          Muchas personas llegan con dudas: no saben qué tratamiento elegir, tienen miedo a
+          resultados artificiales o no entienden bien las diferencias entre opciones.
+        </p>
+        <p style="font-size:1.1rem;margin-bottom:1.3rem">
+          Aquí te ayudamos a entender qué le ocurre a tu piel y qué tratamiento es el más
+          adecuado para ti, sin venderte de más.
+        </p>
+        <p style="font-size:1.1rem;margin-bottom:2.5rem">
+          Nuestro objetivo no es cambiarte, es ayudarte a verte mejor respetando tu expresión y tu rostro.
+        </p>
+        <a href="#" class="btn btn-outline" onclick="showPage('consulta');return false;">Solicita tu valoración gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW DRA. RUT VICTORIA -->
+  <div class="about-preview">
+    <div class="about-img">
+      <img
+        src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&auto=format&fit=crop&q=80"
+        alt="Dra. Rut Victoria"
+      >
+    </div>
+    <div class="about-content">
+      <span class="section-tag">¿Quién está detrás de tu tratamiento?</span>
+      <h2>La Dra. Rut Victoria</h2>
+      <div class="divider"></div>
+      <p style="margin-bottom:1.2rem">
+        La Dra. Rut Victoria trabaja la medicina estética desde la precisión médica y la naturalidad.
+        Analiza cada rostro de forma individual para diseñar un plan personalizado, evitando
+        resultados exagerados o poco armónicos.
+      </p>
+      <p style="margin-bottom:2rem">
+        Cada decisión se toma con un criterio claro: <em>mejorar sin transformar.</em>
+      </p>
+      <a href="#" class="btn btn-primary" onclick="showPage('dra');return false;">Conocer a la Dra. Rut →</a>
+    </div>
+  </div>
+
+  <!-- TRATAMIENTOS PREVIEW -->
+  <section class="section treatments-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo más solicitado</span>
+        <h2>Tratamientos para rejuvenecer sin cirugía</h2>
+        <div class="divider center"></div>
+        <p style="max-width:540px;margin:0 auto">
+          Estos son los tratamientos más demandados por pacientes que buscan mejorar su rostro
+          de forma natural y progresiva.
+        </p>
+      </div>
+    </div>
+    <div class="treatments-grid">
+
+      <div class="treatment-card" onclick="showPage('tratamientos')">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&auto=format&fit=crop&q=80" alt="Neuromoduladores">
+        <div class="treatment-card-overlay">
+          <h3>Neuromoduladores (Bótox)</h3>
+          <p>Suaviza arrugas de expresión manteniendo tu naturalidad. Frente, entrecejo, patas de gallo, mandíbula y cuello.</p>
+          <span class="treat-link">Ver tratamiento →</span>
+        </div>
+      </div>
+
+      <div class="treatment-card" onclick="showPage('tratamientos')">
+        <img src="https://images.unsplash.com/photo-1612349316228-5942a9b489c2?w=600&auto=format&fit=crop&q=80" alt="Aumento de labios">
+        <div class="treatment-card-overlay">
+          <h3>Aumento de labios con ácido hialurónico</h3>
+          <p>Volumen, definición e hidratación. Resultados naturales y equilibrados que armonizan tu rostro.</p>
+          <span class="treat-link">Ver tratamiento →</span>
+        </div>
+      </div>
+
+      <div class="treatment-card" onclick="showPage('tratamientos')">
+        <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&auto=format&fit=crop&q=80" alt="Peeling Químico">
+        <div class="treatment-card-overlay">
+          <h3>Peeling químico para acné y manchas</h3>
+          <p>Renueva la piel, mejora su textura y recupera la luminosidad. Ideal para acné, manchas y piel apagada.</p>
+          <span class="treat-link">Ver tratamiento →</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="treatments-cta">
+      <a href="#" class="btn btn-primary" onclick="showPage('tratamientos');return false;">Ver todos los tratamientos →</a>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY STRIP -->
+  <div class="philosophy-strip">
+    <div class="container">
+      <blockquote>
+        "Para mí, la medicina estética es un arte que va más allá de un tratamiento.
+        Es la perfecta unión entre ciencia, creatividad y emoción."
+      </blockquote>
+      <cite>— Dra. Rut Ester Victoria Guzmán · Médico Estético</cite>
+    </div>
+  </div>
+
+  <!-- ¿QUÉ PUEDES MEJORAR? -->
+  <section class="section" style="background:var(--bg3)">
+    <div class="container">
+      <div style="max-width:780px;margin:0 auto;text-align:center">
+        <span class="section-tag">Sin pasar por quirófano</span>
+        <h2>¿Qué puedes mejorar con medicina estética?</h2>
+        <div class="divider center"></div>
+        <p style="font-size:1.05rem;margin-bottom:1.2rem">
+          La medicina estética actual permite tratar múltiples preocupaciones sin cirugía. Puedes mejorar
+          arrugas, flacidez, manchas, falta de luminosidad o volumen facial mediante tratamientos
+          mínimamente invasivos.
+        </p>
+        <p style="font-size:1.1rem;font-style:italic;color:var(--dark)">
+          El objetivo es que te veas mejor sin que se note que te has hecho algo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTROS TRATAMIENTOS -->
+  <section class="section treatments-list-section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-tag">Más soluciones</span>
+          <h2>Otros tratamientos para mejorar tu piel</h2>
+          <div class="divider"></div>
+          <p style="margin-bottom:2rem">
+            Además de los tratamientos principales, disponemos de soluciones adaptadas a diferentes
+            necesidades y objetivos:
+          </p>
+          <a href="#" class="btn btn-primary" onclick="showPage('tratamientos');return false;">Ver todos los tratamientos</a>
+        </div>
+        <div>
+          <div class="treatment-list-grid">
+            <div class="treatment-list-item"><div class="treat-dot"></div>Mesoterapia facial</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Bioestimuladores de colágeno</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Skinboosters profundos</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Tratamiento de ojeras</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Hilos tensores</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Tratamiento papada</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Láser e IPL</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Hiperhidrosis</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Bruxismo (maseteros)</div>
+            <div class="treatment-list-item"><div class="treat-dot"></div>Full Face integral</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO SABER QUÉ TRATAMIENTO -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <div class="two-col">
+        <div class="rounded-img">
+          <img
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=700&auto=format&fit=crop&q=80"
+            alt="Valoración personalizada"
+          >
+        </div>
+        <div>
+          <span class="section-tag">Primer paso</span>
+          <h2>¿Cómo saber qué tratamiento necesitas sin equivocarte?</h2>
+          <div class="divider"></div>
+          <p style="margin-bottom:1.2rem">
+            La clave está en una buena valoración. Antes de realizar cualquier tratamiento, analizamos
+            tu piel, tu estructura facial y tus objetivos para proponerte solo lo que realmente necesitas.
+          </p>
+          <p style="margin-bottom:2rem">Esto evita resultados artificiales y tratamientos innecesarios.</p>
+          <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Solicitar valoración →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <span class="section-tag">Opiniones reales</span>
+        <h2>Pacientes que ya han mejorado su piel</h2>
+        <div class="divider center"></div>
+        <p style="max-width:520px;margin:0 auto">
+          Nuestros pacientes valoran la honestidad, el trato cercano y los resultados
+          progresivos que respetan su imagen.
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"No vayan a otra doctora a inventar, con ella puedes conseguir lo que buscas sin perder naturalidad. Súper recomendada."</p>
+          <div class="testimonial-author">Noha B.</div>
+          <div class="testimonial-source">Google · 5/5</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Encantada con la Doctora Ruth. Me hizo sentir como en casa, súper recomendada. Los resultados superaron mis expectativas."</p>
+          <div class="testimonial-author">Jennifer P.</div>
+          <div class="testimonial-source">Google · 5/5</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"La mejor en pómulos y labios. Resultados increíbles, naturales y exactamente lo que buscaba. Sin duda repetiré."</p>
+          <div class="testimonial-author">Beth F.</div>
+          <div class="testimonial-source">Google · 5/5</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="#" class="btn btn-outline" onclick="showPage('casos');return false;">Ver galería de resultados →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <span class="section-tag">Preguntas frecuentes</span>
+        <h2>Antes de hacerte un tratamiento</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Qué tratamiento de medicina estética es mejor para mí?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Depende de tu piel, edad y objetivo. Lo más recomendable es una valoración personalizada para definir el tratamiento adecuado sin sobreestimar ni subestimar tus necesidades.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Cuánto dura el efecto del bótox?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El efecto suele durar entre 4 y 6 meses dependiendo del paciente y la zona tratada. Con tratamientos continuados, la duración puede prolongarse.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿El ácido hialurónico es seguro?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, es un material reabsorbible y seguro utilizado en medicina estética para aportar volumen e hidratación. Es biocompatible y se metaboliza de forma natural.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Qué tratamiento mejora la calidad de la piel?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Tratamientos como mesoterapia, skinboosters o peeling químico ayudan a mejorar textura, luminosidad y tono de la piel de forma progresiva y natural.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Se puede rejuvenecer el rostro sin cirugía?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, existen múltiples tratamientos mínimamente invasivos que permiten mejorar el rostro sin necesidad de cirugía, con resultados naturales y tiempo de recuperación mínimo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Cuánto cuesta un tratamiento de medicina estética en Barcelona?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El precio varía según el tratamiento y el caso. Es necesario realizar una valoración previa para dar un presupuesto ajustado y personalizado a tus necesidades.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <span class="section-tag" style="display:block;text-align:center">El primer paso</span>
+      <h2>Da el paso y mejora tu piel con un tratamiento adaptado a ti</h2>
+      <div class="divider center"></div>
+      <p>Si estás buscando mejorar tu piel, suavizar arrugas o verte mejor sin cambios artificiales, podemos ayudarte. No necesitas saber qué tratamiento hacerte, solo dar el primer paso.</p>
+      <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Reserva tu cita ahora →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER HOME -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg viewBox="0 0 80 50" style="width:80px" fill="none">
+            <text x="0" y="36" font-family="DM Serif Display,serif" font-size="28" fill="#BB9C87" letter-spacing="-1">RV</text>
+          </svg>
+          <p>Medicina estética en Barcelona con enfoque médico, naturalidad y resultados que respetan tu esencia. Carrer de Girona, 84, Eixample, 08009 Barcelona.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('home');return false;">Inicio</a></li>
+            <li><a href="#" onclick="showPage('dra');return false;">Dra. Rut Victoria</a></li>
+            <li><a href="#" onclick="showPage('tratamientos');return false;">Tratamientos</a></li>
+            <li><a href="#" onclick="showPage('casos');return false;">Casos & Testimonios</a></li>
+            <li><a href="#" onclick="showPage('blog');return false;">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tratamientos</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('tratamientos');return false;">Neuromoduladores</a></li>
+            <li><a href="#" onclick="showPage('tratamientos');return false;">Ácido hialurónico</a></li>
+            <li><a href="#" onclick="showPage('tratamientos');return false;">Peeling químico</a></li>
+            <li><a href="#" onclick="showPage('tratamientos');return false;">Mesoterapia</a></li>
+            <li><a href="#" onclick="showPage('tratamientos');return false;">Full Face</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+34663404198">+34 663 40 41 98</a></li>
+            <li><a href="mailto:clinica.rutvictoria@gmail.com">clinica.rutvictoria@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/dra.rutvictoria.medicoestetico/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61578938666140" target="_blank">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@rutvictoriaestetica" target="_blank">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Dra. Rut Victoria · Medicina Estética · Barcelona</p>
+        <div class="social-links">
+          <div class="social-link">ig</div>
+          <div class="social-link">fb</div>
+          <div class="social-link">tk</div>
+          <div class="social-link">wp</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-home -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE: DRA. RUT VICTORIA
+═══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-dra">
+
+  <!-- HERO -->
+  <section class="dra-hero">
+    <div class="dra-hero-text">
+      <span class="section-tag">Sobre mí</span>
+      <h1>Dra. Rut Victoria</h1>
+      <div class="dra-hero-subtitle">Medicina Estética y Bienestar Integral</div>
+      <div class="divider"></div>
+      <p style="margin-bottom:2rem;font-size:1.05rem;max-width:440px">
+        Médico estética especializada en resultados naturales y armoniosos, con base en
+        precisión médica y un enfoque profundamente humano.
+      </p>
+      <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Reservar consulta →</a>
+    </div>
+    <div class="dra-hero-img">
+      <img
+        src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=900&auto=format&fit=crop&q=80"
+        alt="Dra. Rut Victoria"
+      >
+    </div>
+  </section>
+
+  <!-- FILOSOFÍA -->
+  <section class="section dra-philosophy">
+    <div class="container">
+      <div class="dra-phil-inner">
+        <div>
+          <span class="section-tag">Mi filosofía</span>
+          <h2>Un arte que va más allá del tratamiento</h2>
+          <div class="divider"></div>
+          <p style="margin-bottom:1.3rem;font-size:1.05rem">
+            Para mí, la medicina estética es un arte que va más allá de un tratamiento. Es la
+            perfecta unión entre ciencia, creatividad y emoción. Mi misión es ayudarte a descubrir
+            y realzar esa belleza única que ya vive en ti, de una forma sutil, armónica y elegante.
+          </p>
+          <p style="margin-bottom:1.3rem;font-size:1.05rem">
+            Aquello que hoy ves como imposible puede convertirse en tu nueva realidad. Estás a un
+            paso de sentirte y verte como siempre has soñado, y yo estaré a tu lado para acompañarte
+            en cada detalle de este camino hacia tu mejor versión.
+          </p>
+          <div style="margin-top:2rem;padding:1.5rem 2rem;background:var(--bg1);border-left:3px solid var(--primary);border-radius:2px">
+            <p style="font-style:italic;font-size:1.05rem;color:var(--darker)">"Mejorar sin transformar. Ese es mi principio."</p>
+          </div>
+        </div>
+        <div class="dra-phil-img">
+          <img
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&auto=format&fit=crop&q=80"
+            alt="Filosofía médica"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MI MISIÓN -->
+  <section class="section dra-mission">
+    <div class="container">
+      <div class="dra-mission-inner">
+        <div class="dra-mission-text">
+          <span class="section-tag">Mi misión como médico estético</span>
+          <h2>Que vuelvas a enamorarte de ti misma</h2>
+          <div class="divider"></div>
+          <p style="margin-bottom:1.3rem;font-size:1.05rem">
+            Deseo que cuando te mires al espejo, no solo te reconcilies con tu imagen, sino que
+            vuelvas a enamorarte de ti misma. Mi compromiso es escucharte, entender tu historia
+            y trabajar con delicadeza en cada detalle.
+          </p>
+          <p style="margin-bottom:1.3rem;font-size:1.05rem">
+            Para que el reflejo que veas muestre tu verdadera esencia y te haga sentir plena y
+            segura. Cada plan de tratamiento es único, porque cada rostro y cada historia lo son.
+          </p>
+          <div class="mission-pillars">
+            <div class="pillar-card"><div class="pillar-num">Escuchar</div><div class="pillar-label">Tu historia y objetivos</div></div>
+            <div class="pillar-card"><div class="pillar-num">Respetar</div><div class="pillar-label">Tu esencia y expresión</div></div>
+            <div class="pillar-card"><div class="pillar-num">Mejorar</div><div class="pillar-label">Sin transformar</div></div>
+            <div class="pillar-card"><div class="pillar-num">Acompañar</div><div class="pillar-label">En cada paso</div></div>
+          </div>
+        </div>
+        <div class="dra-mission-img">
+          <img
+            src="https://images.unsplash.com/photo-1621274403997-7aa4f517dec7?w=700&auto=format&fit=crop&q=80"
+            alt="Misión Dra. Rut Victoria"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIOGRAFÍA -->
+  <section class="section dra-bio">
+    <div class="container">
+      <div class="dra-bio-inner">
+        <span class="section-tag" style="color:var(--primary);text-align:center;display:block">Mi trayectoria</span>
+        <h2>Una vocación que se convirtió en pasión</h2>
+        <div class="divider"></div>
+        <p>¡Hola! Soy la Dra. Rut Victoria. Desde muy joven supe que mi vocación estaba en la medicina. Me gradué a los 23 años y desde entonces he ejercido con pasión en el área de la medicina de urgencias y comunitaria.</p>
+        <p>Hace cinco años decidí dar un giro a mi carrera y adentrarme en el fascinante mundo de la medicina estética, enfocándome en la remodelación corporal y facial. Desde entonces, he descubierto una pasión renovada por esta especialidad, dedicando mi práctica a mejorar tanto el rostro como el cuerpo de mis pacientes.</p>
+        <p>Mi objetivo es ofrecer un enfoque holístico y personalizado, utilizando las últimas técnicas y tecnologías disponibles para brindar resultados seguros, efectivos y duraderos. Cada tratamiento que realizo está respaldado por mi dedicación, experiencia y un profundo compromiso con la excelencia y el bienestar de quienes confían en mí.</p>
+        <p>Estoy aquí para escucharte, comprender tus objetivos y trabajar contigo para lograr la mejor versión de ti mismo/a. Te invito a ponerte en contacto conmigo para iniciar juntos una transformación positiva y duradera.</p>
+        <a href="#" class="btn btn-light" style="margin-top:2rem" onclick="showPage('consulta');return false;">Agenda tu primera cita →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENCIALES -->
+  <section class="section credentials">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <span class="section-tag">En números</span>
+        <h2>Por qué confiar en la Dra. Rut Victoria</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="credentials-grid">
+        <div class="credential-card"><div class="cred-icon">🏥</div><span class="cred-num">+500</span><div class="cred-label">Pacientes atendidos</div></div>
+        <div class="credential-card"><div class="cred-icon">⭐</div><span class="cred-num">5.0</span><div class="cred-label">Puntuación en Google</div></div>
+        <div class="credential-card"><div class="cred-icon">📅</div><span class="cred-num">5 años</span><div class="cred-label">En medicina estética</div></div>
+        <div class="credential-card"><div class="cred-icon">🎓</div><span class="cred-num">Colegiada</span><div class="cred-label">Núm. 080850967</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>¿Lista para empezar tu transformación?</h2>
+      <div class="divider center"></div>
+      <p>El primer paso es una valoración personalizada donde analizaremos juntas tu piel, tus objetivos y el plan más adecuado para ti.</p>
+      <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Reservar valoración con la Dra. Rut →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2024 Dra. Rut Victoria · Medicina Estética · Barcelona</p>
+        <div class="social-links">
+          <div class="social-link">ig</div>
+          <div class="social-link">fb</div>
+          <div class="social-link">wp</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-dra -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE: TRATAMIENTOS
+═══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-tratamientos">
+
+  <div class="tratamientos-hero">
+    <div class="container">
+      <span class="section-tag" style="color:var(--primary)">Todos los servicios</span>
+      <h1>Tratamientos de medicina estética</h1>
+      <div class="divider center" style="background:rgba(255,255,255,0.3)"></div>
+      <p>Soluciones médicas personalizadas para rejuvenecer, mejorar y armonizar tu rostro sin cirugía.</p>
+    </div>
+  </div>
+
+  <section class="section tratamientos-body">
+    <div class="container">
+      <div class="tratamientos-full-grid">
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&auto=format&fit=crop&q=80" alt="Neuromoduladores"></div>
+          <div class="trat-full-body">
+            <h3>Neuromoduladores (Bótox)</h3>
+            <p>Relajan la musculatura responsable de arrugas dinámicas. Frente, entrecejo, patas de gallo, mandíbula y cuello.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>15 min</strong>Aplicación</div>
+              <div class="trat-spec"><strong>4–6 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>No necesaria</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1612349316228-5942a9b489c2?w=600&auto=format&fit=crop&q=80" alt="Ácido Hialurónico"></div>
+          <div class="trat-full-body">
+            <h3>Rellenos de Ácido Hialurónico</h3>
+            <p>Restauran volumen, perfinan y corrigen arrugas estáticas. Labios, pómulos, surcos nasogenianos, ojeras.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>15 min</strong>Aplicación</div>
+              <div class="trat-spec"><strong>12–18 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>Tópica</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&auto=format&fit=crop&q=80" alt="Mesoterapia"></div>
+          <div class="trat-full-body">
+            <h3>Mesoterapia Facial</h3>
+            <p>Microinyecciones de vitaminas, minerales y ácido hialurónico para hidratar, revitalizar y mejorar la piel.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>30 min</strong>Sesión</div>
+              <div class="trat-spec"><strong>3–4 sesiones</strong>Protocolo</div>
+              <div class="trat-spec"><strong>Mínima</strong>Molestia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1586947069044-2ea05c9a8f1b?w=600&auto=format&fit=crop&q=80" alt="Bioestimuladores"></div>
+          <div class="trat-full-body">
+            <h3>Bioestimuladores de Colágeno</h3>
+            <p>Sculptra® y Radiesse® estimulan la producción de colágeno para mayor firmeza y efecto lifting progresivo.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>30 min</strong>Aplicación</div>
+              <div class="trat-spec"><strong>12–24 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>Local</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&auto=format&fit=crop&q=80" alt="Peeling Químico"></div>
+          <div class="trat-full-body">
+            <h3>Peelings Químicos</h3>
+            <p>Exfoliación controlada con ácidos para manchas, acné y piel apagada. Estimulan la renovación celular.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>45 min</strong>Sesión</div>
+              <div class="trat-spec"><strong>3–6 sesiones</strong>Protocolo</div>
+              <div class="trat-spec"><strong>No necesaria</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop&q=80" alt="Ojeras"></div>
+          <div class="trat-full-body">
+            <h3>Tratamiento de Ojeras</h3>
+            <p>Mejoran pigmentación, hundimiento y calidad de piel en el contorno ocular con ácido hialurónico o mesoterapia.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>20 min</strong>Aplicación</div>
+              <div class="trat-spec"><strong>12 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>Tópica</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&auto=format&fit=crop&q=80" alt="Skinboosters"></div>
+          <div class="trat-full-body">
+            <h3>Skinboosters</h3>
+            <p>Hidratación profunda con ácido hialurónico ligero para mejorar elasticidad y luminosidad. Efecto glow natural.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>30 min</strong>Sesión</div>
+              <div class="trat-spec"><strong>6–9 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>Tópica</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&auto=format&fit=crop&q=80" alt="Láser IPL"></div>
+          <div class="trat-full-body">
+            <h3>Láser e IPL</h3>
+            <p>Atenúa manchas, arrugas finas y poros dilatados, estimulando colágeno mediante luz controlada.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>45 min</strong>Sesión</div>
+              <div class="trat-spec"><strong>Variable</strong>Protocolo</div>
+              <div class="trat-spec"><strong>Mínima</strong>Molestia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=600&auto=format&fit=crop&q=80" alt="Papada"></div>
+          <div class="trat-full-body">
+            <h3>Tratamiento de Papada</h3>
+            <p>Enzimas lipolíticas que reducen la grasa bajo el mentón, mejorando la definición mandibular sin cirugía.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>20 min</strong>Sesión</div>
+              <div class="trat-spec"><strong>2–3 sesiones</strong>Protocolo</div>
+              <div class="trat-spec"><strong>Local</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80" alt="Bruxismo"></div>
+          <div class="trat-full-body">
+            <h3>Bruxismo con Toxina Botulínica</h3>
+            <p>Infiltración en maseteros para reducir tensión, prevenir desgaste dental y mejorar la estética facial.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>15 min</strong>Aplicación</div>
+              <div class="trat-spec"><strong>4–6 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>No necesaria</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&auto=format&fit=crop&q=80" alt="Hiperhidrosis"></div>
+          <div class="trat-full-body">
+            <h3>Hiperhidrosis (Sudoración excesiva)</h3>
+            <p>Toxina botulínica para bloquear las glándulas sudoríparas en axilas, manos u otras zonas.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>20 min</strong>Aplicación</div>
+              <div class="trat-spec"><strong>6–8 meses</strong>Duración</div>
+              <div class="trat-spec"><strong>Tópica</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trat-full-card trat-featured">
+          <div class="trat-full-img"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&auto=format&fit=crop&q=80" alt="Full Face"></div>
+          <div class="trat-full-body">
+            <h3>Full Face · Armonización Integral</h3>
+            <p>Plan personalizado combinando ácido hialurónico y neuromoduladores para rejuvenecer el rostro completo con naturalidad.</p>
+            <div class="trat-specs">
+              <div class="trat-spec"><strong>60–90 min</strong>Sesión</div>
+              <div class="trat-spec"><strong>Personalizado</strong>Plan</div>
+              <div class="trat-spec"><strong>Local</strong>Anestesia</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:4rem">
+        <p style="margin-bottom:1.5rem;font-size:1.05rem">¿No sabes qué tratamiento es el indicado para ti?</p>
+        <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Solicita una valoración personalizada →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2024 Dra. Rut Victoria · Medicina Estética · Barcelona</p>
+        <div class="social-links">
+          <div class="social-link">ig</div>
+          <div class="social-link">fb</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-tratamientos -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE: CASOS & TESTIMONIOS
+═══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-casos">
+
+  <div class="casos-hero">
+    <div class="container">
+      <span class="section-tag">Galería de resultados</span>
+      <h1>Casos & Testimonios</h1>
+      <div class="divider center"></div>
+      <p>Resultados reales de pacientes reales. Cada caso es único, personalizado y respeta la esencia de cada persona.</p>
+    </div>
+  </div>
+
+  <section class="section casos-body">
+    <div class="container">
+      <span class="section-tag">Antes & Después</span>
+      <h2 style="margin-bottom:0.5rem">Resultados que hablan por sí solos</h2>
+      <div class="divider"></div>
+      <div class="casos-grid">
+
+        <div class="caso-card">
+          <div class="caso-images">
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&auto=format&fit=crop&q=80" alt="Antes">
+              <div class="caso-label">Antes</div>
+            </div>
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1542596594-648edea5a776?w=400&auto=format&fit=crop&q=80" alt="Después">
+              <div class="caso-label">Después</div>
+            </div>
+          </div>
+          <div class="caso-info">
+            <h4>Neuromoduladores & Inductores de Colágeno</h4>
+            <p>Suavizado de arrugas profundas en frente y entre cejas manteniendo expresividad natural.</p>
+          </div>
+        </div>
+
+        <div class="caso-card">
+          <div class="caso-images">
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&auto=format&fit=crop&q=80" alt="Antes">
+              <div class="caso-label">Antes</div>
+            </div>
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&auto=format&fit=crop&q=80" alt="Después">
+              <div class="caso-label">Después</div>
+            </div>
+          </div>
+          <div class="caso-info">
+            <h4>Full Face · Armonización Completa</h4>
+            <p>Plan integral combinando rellenos y neuromoduladores para un rejuvenecimiento global y natural.</p>
+          </div>
+        </div>
+
+        <div class="caso-card">
+          <div class="caso-images">
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&auto=format&fit=crop&q=80" alt="Antes">
+              <div class="caso-label">Antes</div>
+            </div>
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&auto=format&fit=crop&q=80" alt="Después">
+              <div class="caso-label">Después</div>
+            </div>
+          </div>
+          <div class="caso-info">
+            <h4>Aumento de Labios con Ácido Hialurónico</h4>
+            <p>Definición y volumen equilibrado que armoniza el rostro sin perder naturalidad.</p>
+          </div>
+        </div>
+
+        <div class="caso-card">
+          <div class="caso-images">
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=80" alt="Antes">
+              <div class="caso-label">Antes</div>
+            </div>
+            <div class="caso-img-wrap">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&auto=format&fit=crop&q=80" alt="Después">
+              <div class="caso-label">Después</div>
+            </div>
+          </div>
+          <div class="caso-info">
+            <h4>Peeling Químico · Renovación de Piel</h4>
+            <p>Mejora notable de textura, luminosidad y uniformidad del tono en piel con manchas y acné.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <span class="section-tag">Opiniones verificadas</span>
+        <h2>Lo que dicen nuestros pacientes</h2>
+        <div class="divider center"></div>
+        <div class="rating-highlight">
+          <span class="rating-num">5.0</span>
+          <div>
+            <div style="color:var(--primary);font-size:1.2rem">★★★★★</div>
+            <div style="font-size:0.82rem;color:var(--dark)">23 reseñas en Google · 15 en Doctoralia</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">N</div>
+            <div class="review-meta"><h4>Noha Barnadi</h4><span>Hace 2 meses</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"No vayan a otra doctora a inventar, con ella puedes terminar consiguiendo exactamente lo que buscas. Los resultados son completamente naturales."</p>
+          <div class="review-platform">Google · Opinión verificada</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">J</div>
+            <div class="review-meta"><h4>Jennifer Pablo</h4><span>Hace 2 meses</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Encantada con mi Doctora Ruth. Me hizo sentir como en casa, súper recomendada a todas mis amigas. Volveré sin dudarlo."</p>
+          <div class="review-platform">Google · Opinión verificada</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">B</div>
+            <div class="review-meta"><h4>Beth Franco</h4><span>Hace 4 meses</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"La mejor en pómulos y labios. Todos los resultados quedan espectaculares y totalmente naturales. 100% recomendada."</p>
+          <div class="review-platform">Google · Opinión verificada</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">Y</div>
+            <div class="review-meta"><h4>Yohanna García</h4><span>Hace 4 meses</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Súper eficaz, hasta lograr los resultados que deseaba. Muy profesional y atenta. Me explicó todo con detalle antes de cada tratamiento."</p>
+          <div class="review-platform">Google · Opinión verificada</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">M</div>
+            <div class="review-meta"><h4>María López</h4><span>Hace 5 meses</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Primera vez que me hago algo estético y la experiencia fue increíble. Sin presiones, sin exageraciones. Exactamente lo que buscaba."</p>
+          <div class="review-platform">Doctoralia · Opinión verificada</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">C</div>
+            <div class="review-meta"><h4>Carmen Ruiz</h4><span>Hace 6 meses</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"El tratamiento de ojeras fue un antes y un después. La Dra. Rut es precisa, honesta y los resultados hablan solos. La mejor decisión."</p>
+          <div class="review-platform">Doctoralia · Opinión verificada</div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:3rem">
+        <a href="https://share.google/dy6CqjmOQ0YH7jCGY" target="_blank" class="btn btn-outline">Ver todas las opiniones en Google →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>¿Te gustaría ver resultados así?</h2>
+      <div class="divider center"></div>
+      <p>Pide tu valoración y diseñamos juntas un plan personalizado para conseguir los resultados que buscas.</p>
+      <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Reservar mi cita →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2024 Dra. Rut Victoria · Medicina Estética · Barcelona</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-casos -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE: BLOG
+═══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-blog">
+
+  <div class="blog-hero">
+    <div class="container">
+      <span class="section-tag">Recursos y consejos</span>
+      <h1>Blog de Medicina Estética</h1>
+      <div class="divider center"></div>
+      <p style="color:var(--dark);max-width:500px;margin:0 auto">
+        Artículos, guías y novedades sobre tratamientos estéticos, cuidado de la piel y bienestar.
+      </p>
+    </div>
+  </div>
+
+  <section class="section blog-body">
+    <div class="container">
+      <div class="blog-grid">
+
+        <div class="blog-card">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&auto=format&fit=crop&q=80" alt="Bótox natural"></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Neuromoduladores</span>
+            <h3>Bótox natural: cómo conseguir resultados sin perder expresión</h3>
+            <p>Descubre cómo la técnica y la dosis hacen toda la diferencia entre un resultado artificial y uno completamente natural.</p>
+            <div class="blog-date">12 Noviembre 2024</div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1612349316228-5942a9b489c2?w=600&auto=format&fit=crop&q=80" alt="Labios"></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Ácido Hialurónico</span>
+            <h3>Aumento de labios: todo lo que necesitas saber antes de hacerlo</h3>
+            <p>Preguntas frecuentes, mitos y realidades sobre el tratamiento de labios más solicitado en medicina estética.</p>
+            <div class="blog-date">28 Octubre 2024</div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&auto=format&fit=crop&q=80" alt="Piel"></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Piel</span>
+            <h3>5 tratamientos que mejoran la calidad de tu piel sin cirugía</h3>
+            <p>Desde peelings hasta bioestimuladores: guía completa para elegir el tratamiento más adecuado según tu caso.</p>
+            <div class="blog-date">15 Octubre 2024</div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop&q=80" alt="Ojeras"></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Contorno ocular</span>
+            <h3>Ojeras: causas, tipos y el tratamiento más eficaz según tu caso</h3>
+            <p>No todas las ojeras son iguales. Aprende a identificar qué tipo tienes y qué solución médica existe.</p>
+            <div class="blog-date">3 Octubre 2024</div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1590165482129-1b8b27698780?w=600&auto=format&fit=crop&q=80" alt="Full Face"></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Full Face</span>
+            <h3>Full Face: qué es, en qué consiste y para quién está indicado</h3>
+            <p>El tratamiento más integral de la medicina estética facial explicado paso a paso, con resultados reales.</p>
+            <div class="blog-date">18 Septiembre 2024</div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&auto=format&fit=crop&q=80" alt="Bruxismo"></div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Bruxismo</span>
+            <h3>Bruxismo y estética facial: el doble beneficio de un solo tratamiento</h3>
+            <p>Cómo la toxina botulínica en maseteros alivia el apriete dental y afina visualmente la mandíbula.</p>
+            <div class="blog-date">5 Septiembre 2024</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>¿Tienes dudas sobre algún tratamiento?</h2>
+      <div class="divider center"></div>
+      <p>Consulta con la Dra. Rut Victoria y recibe una valoración personalizada sin compromiso.</p>
+      <a href="#" class="btn btn-primary" onclick="showPage('consulta');return false;">Solicitar consulta →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2024 Dra. Rut Victoria · Medicina Estética · Barcelona</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-blog -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE: CONSULTA
+═══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-consulta">
+
+  <div class="consulta-hero">
+    <div class="container">
+      <span class="section-tag" style="color:var(--primary)">Tu primer paso</span>
+      <h1>Reserva tu consulta</h1>
+      <div class="divider center" style="background:rgba(255,255,255,0.25)"></div>
+      <p>No necesitas saber qué tratamiento hacerte. Solo cuéntanos cómo te sientes y te ayudamos a encontrar la mejor solución.</p>
+    </div>
+  </div>
+
+  <section class="section consulta-body">
+    <div class="container">
+      <div class="consulta-grid">
+
+        <!-- FORMULARIO -->
+        <div class="contact-form">
+          <span class="section-tag">Envíanos un mensaje</span>
+          <h2>¿Tienes alguna consulta?</h2>
+          <p class="form-intro">Completa el formulario y te contactamos en menos de 24 horas para organizar tu valoración.</p>
+          <form onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="+34 000 000 000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="tucorreo@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Tratamiento de interés</label>
+              <select>
+                <option value="">Selecciona un tratamiento...</option>
+                <option>Neuromoduladores (Bótox)</option>
+                <option>Ácido Hialurónico / Labios</option>
+                <option>Peeling Químico</option>
+                <option>Full Face</option>
+                <option>Mesoterapia Facial</option>
+                <option>Skinboosters</option>
+                <option>Tratamiento de Ojeras</option>
+                <option>Bioestimuladores de Colágeno</option>
+                <option>Otro / No sé qué necesito</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea placeholder="Cuéntanos brevemente qué te gustaría mejorar o cualquier duda que tengas..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Enviar consulta →</button>
+          </form>
+        </div>
+
+        <!-- INFO CONTACTO -->
+        <div>
+          <div class="contact-info-card">
+            <h3>Información de contacto</h3>
+            <div class="contact-detail">
+              <span class="contact-icon">📍</span>
+              <div><strong>Dirección</strong><span>Carrer de Girona, 84, Eixample<br>08009 Barcelona</span></div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">📞</span>
+              <div><strong>WhatsApp Business</strong><span>+34 663 40 41 98</span></div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">✉</span>
+              <div><strong>Email</strong><span>clinica.rutvictoria@gmail.com</span></div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">⏰</span>
+              <div><strong>Horario</strong><span>Lun–Vie: 10:00 – 20:00<br>Sábados: 10:00 – 14:00</span></div>
+            </div>
+            <a href="https://wa.me/34663404198" class="whatsapp-btn" target="_blank">
+              <span>💬</span> Escribir por WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-info-card">
+            <h3>Sígueme en redes</h3>
+            <div class="social-list">
+              <a href="https://www.instagram.com/dra.rutvictoria.medicoestetico/" target="_blank">
+                <span class="social-icon">📸</span> @dra.rutvictoria.medicoestetico
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61578938666140" target="_blank">
+                <span class="social-icon">👤</span> Dra. Rut Victoria en Facebook
+              </a>
+              <a href="https://www.tiktok.com/@rutvictoriaestetica" target="_blank">
+                <span class="social-icon">▶</span> @rutvictoriaestetica en TikTok
+              </a>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <div>
+              <div style="font-size:2rem;margin-bottom:0.5rem">🗺</div>
+              <div>Carrer de Girona, 84</div>
+              <div>Eixample · Barcelona</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2024 Dra. Rut Victoria · Medicina Estética · Barcelona · Núm. Colegiado: 080850967</p>
+        <div class="social-links">
+          <div class="social-link">ig</div>
+          <div class="social-link">wp</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /page-consulta -->
+
+
+<!-- Scripts -->
+<script src="main.js"></script>
+
+</body>
+</html>

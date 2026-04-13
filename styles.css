@@ -134,7 +134,7 @@ nav {
   font-family: var(--font-body);
   font-size: 0.9rem;
   letter-spacing: 0.06em;
-  color: var(--text-mid);
+  color: var(--white);
   transition: color 0.2s;
   position: relative;
 }

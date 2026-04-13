@@ -114,7 +114,7 @@ nav {
   display: flex; align-items: center; gap: 10px; cursor: pointer;
 }
 .logo-img { 
-  height: 42px; 
+  height: 12px; 
   width: auto;  
   object-fit: contain; 
 }
@@ -315,7 +315,7 @@ nav {
 footer { background: var(--darker); color: var(--lighter); padding: 60px 0 30px; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
 .logo-footer {
-  width: 80px;         /* Mantenemos el ancho original de 80px que tenía el SVG */
+  width: 20px;         /* Mantenemos el ancho original de 80px que tenía el SVG */
   height: auto;        /* Evita que la imagen se deforme */
   object-fit: contain;
   margin-bottom: 1rem; /* Crea un espacio limpio con el texto que sigue debajo */

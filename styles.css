@@ -578,3 +578,13 @@ footer { background: var(--darker); color: var(--lighter); padding: 60px 0 30px;
   .nav-links { display: none; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+/* ─── DRA. RUT VICTORIA · ajuste fotos reales ───────────────── */
+.dra-hero-img img {
+  object-position: center top;   /* encuadra desde la cabeza */
+}
+.dra-phil-img img {
+  object-position: center top;
+}
+.dra-mission-img img {
+  object-position: center top;
+}

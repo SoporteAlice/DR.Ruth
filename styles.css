@@ -516,11 +516,12 @@ footer { background: var(--darker); color: var(--lighter); padding: 60px 0 30px;
   cursor: pointer; transition: background 0.2s; margin-top: 1.5rem; width: 100%;
 }
 .whatsapp-btn:hover { background: #20bd5a; }
-.map-placeholder {
-  background: var(--lighter); border-radius: 4px; overflow: hidden;
-  height: 200px; display: flex; align-items: center; justify-content: center;
-  color: var(--dark); font-size: 0.9rem; letter-spacing: 0.1em;
-  text-align: center; border: 1px solid var(--lighter);
+.map-wrapper {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 300px;        /* ajusta la altura que quieras */
+  width: 100%;
+  border: 1px solid var(--lighter);
 }
 
 /* ─── ANIMATIONS ─────────────────────────────────────────────── */

@@ -138,7 +138,7 @@ nav {
   font-family: var(--font-body);
   font-size: 0.9rem;
   letter-spacing: 0.06em;
-  color: var(--white);
+  color: var(--primary);
   transition: color 0.2s;
   position: relative;
 }
@@ -587,4 +587,133 @@ footer { background: var(--darker); color: var(--lighter); padding: 60px 0 30px;
 }
 .dra-mission-img img {
   object-position: center top;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   AÑADIR AL FINAL DE styles.css
+   Nuevas reglas para: secciones Antes & Después y encabezados
+   de bloque en la página de Tratamientos.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── SEPARADOR DE BLOQUE EN TRATAMIENTOS ─────────────────────── */
+.trat-section-title {
+  margin-bottom: 2.5rem;
+}
+.trat-section-title h2 {
+  margin-top: 0.4rem;
+}
+
+/* ─── SECCIÓN ANTES & DESPUÉS ─────────────────────────────────── */
+.antes-despues {
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--lighter);
+  padding-top: 1.5rem;
+}
+
+.ad-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.ad-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  color: var(--darker);
+  letter-spacing: 0.02em;
+}
+
+.ad-badge {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--bg1);
+  border: 1px solid var(--lighter);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+/* ── Grid de dos columnas (Antes | Después) ── */
+.ad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* ── Variante de una sola imagen (para Hiperhidrosis y similares) ── */
+.ad-grid.ad-grid-single {
+  grid-template-columns: 1fr;
+}
+
+.ad-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.ad-item.ad-item-full {
+  grid-column: 1 / -1;
+}
+
+/* ── Imagen ── */
+.ad-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* cuadrada por defecto; cámbiala si prefieres 4/3 */
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Imagen "Antes": ligero desaturado para marcar la diferencia visualmente */
+.ad-img.ad-antes {
+  filter: saturate(0.8) brightness(0.96);
+}
+
+/* Imagen "Después": saturación normal, realzada */
+.ad-img.ad-despues {
+  filter: saturate(1.05) brightness(1.02);
+}
+
+.ad-item:hover .ad-img {
+  transform: scale(1.04);
+}
+
+/* ── Etiqueta flotante ── */
+.ad-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  backdrop-filter: blur(4px);
+}
+
+.ad-label-antes {
+  background: rgba(94, 78, 68, 0.65);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ad-label-despues {
+  background: rgba(94, 78, 68, 0.82);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .ad-grid {
+    grid-template-columns: 1fr 1fr; /* mantener dos columnas en móvil */
+    gap: 6px;
+  }
+
+  .ad-img {
+    aspect-ratio: 3 / 4; /* más vertical en móvil para que se vea mejor el rostro */
+  }
 }
